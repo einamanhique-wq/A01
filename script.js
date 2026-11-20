@@ -101,7 +101,7 @@
   /* galeria */
   var lb = $('#lb'), lbi = $('#lbi'), lbc = $('#lbc');
   if (lb) $$('.gallery button').forEach(function (b) {
-    b.addEventListener('click', function () { lbi.src = b.dataset.src; lbi.alt = b.dataset.cap; lbc.textContent = b.dataset.cap; lb.hidden = false; $('#lbx').focus(); });
+    b.addEventListener('click', function () { lbi.src = b.querySelector('img').src; lbi.alt = b.dataset.cap; lbc.textContent = b.dataset.cap; lb.hidden = false; $('#lbx').focus(); });
   });
   function closeLb() { lb.hidden = true; }
   if (lb) {
