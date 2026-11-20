@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jogo | Por trás do ecrã</title>
+<meta name="description" content="Simulador de chat e quiz sobre cyberbullying.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html"><span class="lg">🛡️</span> Por trás do ecrã</a>
+    <button id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="index.html">Início</a>
+      <a href="tema.html">O Tema</a>
+      <a href="jogo.html" class="on" aria-current="page">Jogo</a>
+      <a href="solucoes.html">Soluções</a>
+      <a href="recomendacoes.html">Recomendações</a>
+      <a href="escola.html">A Escola</a>
+      <a href="conclusao.html">Conclusão e Equipa</a>
+    </nav>
+  </div>
+</header>
+<main class="pg">
+<section id="jogo" class="sec first">
+  <p class="eyebrow rv">04 · Experimenta</p>
+  <h2 class="rv">E tu, o que farias?</h2>
+  <div class="two game-two">
+    <div class="rv">
+      <h3 class="h3" style="margin-top:0">Entra no grupo da turma</h3>
+      <p class="muted">Alguém publicou uma foto embaraçosa de um colega e várias pessoas estão a gozar. Escolhe como reages.</p>
+      <div class="chat" id="chat">
+        <div class="chat-h"><span class="av">👥</span><div><b>Grupo da turma</b><small>34 participantes</small></div></div>
+        <div class="chat-b" id="chatb">
+          <div class="b in"><i>Anónimo 1</i>Olhem a foto dele 😂😂</div>
+          <div class="b in"><i>Anónimo 2</i>Que vergonha, vou partilhar no outro grupo</div>
+          <div class="b in"><i>Anónimo 3</i>Toda a escola vai ver 🔥</div>
+        </div>
+      </div>
+      <div class="opts" id="opts">
+        <button type="button" data-k="0">😂 Rir e partilhar noutros grupos</button>
+        <button type="button" data-k="1">😡 Insultar quem publicou, no grupo</button>
+        <button type="button" data-k="2">🙈 Ficar calado e sair do grupo</button>
+        <button type="button" data-k="3">🛡️ Não partilhar, guardar a prova, denunciar, apoiar o colega e contar a um adulto</button>
+      </div>
+      <div id="outcome" class="outcome" aria-live="polite"></div>
+    </div>
+    <div class="rv">
+      <h3 class="h3" style="margin-top:0">Isto é cyberbullying?</h3>
+      <div id="quiz" class="quiz glass"></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <p><b>Por trás do ecrã</b> · Trabalho escolar de sensibilização · Escola Secundária Marien Ngouabi</p>
+  <p class="small fnav"><a href="index.html">Início</a> · <a href="tema.html">O Tema</a> · <a href="jogo.html">Jogo</a> · <a href="solucoes.html">Soluções</a> · <a href="recomendacoes.html">Recomendações</a> · <a href="escola.html">A Escola</a> · <a href="conclusao.html">Conclusão e Equipa</a></p>
+  <p class="small">Usa as redes para aproximar, nunca para magoar.</p>
+</footer>
+<div id="lb" class="lb" hidden><button type="button" id="lbx" aria-label="Fechar">✕</button><img id="lbi" alt=""><p id="lbc"></p></div>
+<script src="equipa.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
